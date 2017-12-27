@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>上官龙楼</title>
+<meta charset="UTF-8">
+<title>index.html</title>
+
+ <script src="js/jquery-3.2.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/npm.js"></script>
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet"/>
+<link type="text/css" href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style type="text/css">
+	#headDiv{
+		border:1px black ;
+		width:100%;
+		height:200px;
+		border-radius: 3px;
+		position: relative;
+		margin-bottom: 20px;
+		background-color:#ffffff;
+		background:url(photo/headDiv.png)  0px -350px no-repeat;
+	}
+	
+	#bodyDiv{
+		border:1px blue ;
+		margin: 20px;
+		width:1300px;
+		height:700px;
+		border-radius: 3px;
+		position: relative;
+	}
+	
+	#rightBody{
+		border:1px blue ;
+		margin: 20px 10px 10px 20px;
+		padding-left:20px;
+		width:960px;
+		height:600px;
+		border-radius: 3px;
+		position: relative;
+		float:left;
+	}
+	
+	#leftTitle{
+		border:1px blue solid;
+		margin: 20px;
+		width:240px;
+		height:430px;
+		border-radius: 3px;
+		position: relative;
+		float:left;
+	}
+	
+	#head_photo
+		{
+			position: relative; 
+			width:240px;
+			height:220px;
+			border:1px black solid;
+			border-radius:5px;
+			float:left;
+		}
+       #head_photoTwo
+	   {
+	   		position: relative;
+			overflow: hidden; 
+			width:220px;
+			height:180px;
+			border-radius:5px;
+			float:left;
+			margin: 8px;
+	   }
+	   
+	   img{
+		 width:auto;
+		 height:auto;
+		 max-width:100%;
+		 max-height:100%;
+		 float:left;
+		}
+		
+		#lanmu{
+		border:1px blue solid;
+		width:220px;
+		height:200px;
+		padding:0px  20px 10px 10px;
+		border-radius: 3px;
+		position: relative;
+		float:left;
+		}
+		
+		h3{
+			color:#152c72;
+		}
+</style>
+
 </head>
-<body>
-<h2 style="color:blue;">二次元的程序员吧</h2>
-    <span>githubPage免费搭建服务器测试</span>
-    <h3><a href="html/gb.html" target="_blank">程序员告白代码</a></h3>
+<body style="background-color:#e7ecdd;">
+	<div id="headDiv">
+
+	</div>
+
+	<div id="bodyDiv">
+
+		<div id="leftTitle">
+			 <div id="head_photo">
+			<div id="head_photoTwo">
+				<img id="hphoto" src="photo/student.png"/>
+			</div>
+		
+			<span style="font-size:16px; margin: 10px 10px 10px 20px;">学习使我快乐</span>
+		</div>
+			
+		<div id="lanmu">	
+			<h3><a href="#">java</a></h3>
+			<h3><a href="#">android</a></h3>
+			<h3><a href="#">mysql</a></h3>
+			<h3><a href="#">生活琐事</a></h3>
+		</div>
+			
+		</div>
+		
+		<div id="rightBody">
+			<h2 style="color:blue;">二次元的程序员吧</h2>
+			<span>githubPage免费搭建服务器测试</span>
+			<h3><a href="html/gb.html" target="_blank">程序员告白代码</a></h3>
+		</div>
+	</div>
+
+
+<script>
+  $(document).ready(function(){
+		
+	  var p_url = $('#hphoto').attr("src");
+		
+      $('#hphoto').mouseenter(function () {
+          if (p_url = "photo/student.png") {
+              $(this).attr('src', 'photo/student2.png');
+          }
+      });
+
+      $('#hphoto').mouseout(function () {
+          if (p_url = "photo/student2.png") {
+              setTimeout(function () {		//4秒后切换图片
+                  $('#hphoto').attr('src', 'photo/student.png');
+              }, 4000);
+
+          }
+      });
+		
+	});
+
+</script> 
+
 </body>
 </html>
+
