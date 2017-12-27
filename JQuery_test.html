@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>学习使我快乐</title>
+    <style type="text/css">
+		body{
+			min-width:100%;
+			min-height:900px;
+		}
+		#head_photo
+		{
+		   margin-left:200px;
+		   margin-top:200px;
+			position: relative; 
+			width:300px;
+			height:255px;
+			border:1px black solid;
+			border-radius:5px;
+		}
+       #head_photoTwo
+	   {
+			overflow: hidden; 
+			width:300px;
+			height:230px;
+	   }
+	   
+	   img{
+		 width:auto;
+		 height:auto;
+		 max-width:100%;
+		 max-height:100%;
+		}
+	   
+    </style>
+    <script src="js/jquery-3.2.1.js"></script>
+	<script>
+	    $(document).ready(function () {
+	        var p_url = $('#hphoto').attr("src");
+	
+	        $('#hphoto').mouseenter(function () {
+	            if (p_url = "photo/student.png") {
+	                $(this).attr('src', 'photo/student2.png');
+	            }
+	        });
+	
+	        $('#hphoto').mouseout(function () {
+	            if (p_url = "photo/student2.png") {
+	                setTimeout(function () {		//4秒后切换图片
+	                    $('#hphoto').attr('src', 'photo/student.png');
+	                }, 4000);
+	
+	            }
+	        });
+        });
+	</script>
+	<!--
+		1、当前是看杂志，鼠标经过切换为看java
+		2、鼠标离开，5秒后，切换为看杂志
+	-->
+</head>
+<body style="text-align: center;">
+    <div id="head_photo">
+	
+	<div id="head_photoTwo">
+		<img id="hphoto" src="photo/student.png"/>
+	</div>
+	
+	<span style="font-size:16px;">学习使我快乐</span>
+	</div>
+</body>
+</html>
