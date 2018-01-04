@@ -4,11 +4,17 @@
 <meta charset="UTF-8">
 <title>index.html</title>
 
- <script src="jscss/jquery.js"></script>
-	<script src="jscss/bootstrap.js"></script>
-	<script src="jscss/npm.js"></script>
-<link type="text/css" href="jscss/bootstrap.css" rel="stylesheet"/>
-<link type="text/css" href="jscss/bootstrap-theme.min.css" rel="stylesheet"/>
+ <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.custom.js"></script>  
+  
+<!-- 	<script src="js/bootstrap.js"></script>
+	<script src="js/npm.js"></script>
+<link type="text/css"   rel="stylesheet"  href="css/bootstrap.css"/>
+<link type="text/css"   rel="stylesheet"  href="css/bootstrap-theme.min.css"/> -->
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link type="text/css" href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	
+
 <style type="text/css">
 	#headDiv{
 		border:1px black ;
@@ -20,110 +26,85 @@
 		background-color:#ffffff;
 		background:url(photo/headDiv.png)  0px -350px no-repeat;
 	}
-	
-	#bodyDiv{
-		border:1px blue ;
-		margin: 20px;
-		width:1300px;
-		height:700px;
-		border-radius: 3px;
-		position: relative;
-	}
-	
-	#rightBody{
-		border:1px blue ;
-		margin: 20px 10px 10px 20px;
-		padding-left:20px;
-		width:960px;
-		height:600px;
-		border-radius: 3px;
-		position: relative;
-		float:left;
-	}
-	
-	#leftTitle{
-		border:1px blue solid;
-		margin: 20px;
-		width:240px;
-		height:430px;
-		border-radius: 3px;
-		position: relative;
-		float:left;
-	}
-	
-	#head_photo
-		{
-			position: relative; 
-			width:240px;
-			height:220px;
-			border:1px black solid;
-			border-radius:5px;
-			float:left;
-		}
-       #head_photoTwo
-	   {
-	   		position: relative;
-			overflow: hidden; 
-			width:220px;
-			height:180px;
-			border-radius:5px;
-			float:left;
-			margin: 8px;
-	   }
-	   
-	   img{
-		 width:auto;
-		 height:auto;
-		 max-width:100%;
-		 max-height:100%;
-		 float:left;
-		}
-		
-		#lanmu{
-		border:1px blue solid;
-		width:220px;
-		height:200px;
-		padding:0px  20px 10px 10px;
-		border-radius: 3px;
-		position: relative;
-		float:left;
-		}
-		
-		h3{
-			color:#152c72;
-		}
 </style>
 
 </head>
-<body style="background-color:#e7ecdd;">
-	<div id="headDiv">
-
-	</div>
+<body>
+	<div id="headDiv"></div>
 
 	<div id="bodyDiv">
 
 		<div id="leftTitle">
+		<div  id="leftTitleTwo">
+			<span>个人资料</span>
+		</div>
 			 <div id="head_photo">
 			<div id="head_photoTwo">
 				<img id="hphoto" src="photo/student.png"/>
 			</div>
 		
-			<span style="font-size:16px; margin: 10px 10px 10px 20px;">学习使我快乐</span>
-		</div>
+			<span style="font-size:16px; color:#666666;margin: 30px;padding-top:10px;padding-left:20px;">学习使我快乐</span>
+			<button id="left_btn_one" class="leftTitleThree"  value="1">
+				<img id="tb_photo"  src="slPhoto/tiebaTwo.png"/>
+				贴吧
+			</button>
 			
+			<button id="left_btn_two" class="leftTitleThree"  value="1">
+				<img id="sx_photo" src="slPhoto/youjianTwo.png"/>
+				私信
+			</button>
+		</div>
+
 		<div id="lanmu">	
-			<h3><a href="#">java</a></h3>
-			<h3><a href="#">android</a></h3>
-			<h3><a href="#">mysql</a></h3>
-			<h3><a href="#">生活琐事</a></h3>
+		<ul style="background: #ffffff;border:0px ">
+	   		<li style="margin-bottom:5px;"><a href="#aaa">公告</a></li> 
+	   		<li style="margin-top:5px;"><a href="html/lm_javaweb.html"> javaweb </a></li> 
+	   		
+	   		<li style="margin-top: 5px;"><a href="html/lm_android.html">android</a></li>  
+	   		<li style="margin-top:5px;"><a href="html/lm_mysql.html">mysql</a></li> 
+<!--   可以在li里面写超链接，不隐藏也可以。  -->		
+   		
+   </ul>
+	
 		</div>
-			
 		</div>
 		
-		<div id="rightBody">
-			<h2 style="color:blue;">二次元的程序员吧</h2>
-			<span>githubPage免费搭建服务器测试</span>
-			<h3><a href="html/gb.html" target="_blank">程序员告白代码</a></h3>
+
+		
+		<div id="rightBody" >
+			<div style="overflow:hidden;text-overflow:ellipsis;" id="aaa">
+			<h2><a  style="color:#00a2e3; text-decoration: none;" target="_blank" href="http://tieba.baidu.com/f?kw=%E4%BA%8C%E6%AC%A1%E5%85%83%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98&fr=home">二次元的程序员吧</a></h2>
+			<span style="color: #00a2e3">祝各位2018新春快乐！</span>
+			
+			<p>时光匆匆，又是一年，萌新我已经从学院走出了社会，</p>
+			<p>在公司中，或许以后大半生都是在工作中度过了，</p>
+			<p>要是工作很无趣的话，那确实可谓不幸，</p>
+			<p>毕竟那就相当于人生的大半都过的很无趣，</p>
+			<p>将无趣的世界变得有趣，能否就之生活全凭心态而定！</p>
+			
+			<hr>
+			<p>许久没有看“绯弹”了，赤松老贼频繁拖更，不过新的一卷还是很喜欢的，</p>
+			<p>也感谢翻译大佬爆肝更新@桂木しおり 。</p>
+			<p>2018的新番也有很多诈尸了，比如《鲁鲁修》，《刀剑三》，《魔禁三》，</p>
+			<p>《进击的巨人三》，《食尸鬼三》，</p>
+			<p>奶的厉害的《紫罗兰永恒花园》，</p>
+			<p>轻小说销量第一的《龙王的工作》，</p>
+			<p>2018是值得期待的一年，只要对生活还有希望，或许就能等到自己期待的惊喜！</p>
+			<p>在此卡哇伊的吧主我也祝贺各位码农 元旦快乐！</p>
+			
+			<hr>
+			<p>或许刚刚工作，没有什么经验，总是受同事的白眼，</p>
+			<p>习惯独自思考的性格也让你跟公司格格不入，</p>
+			<p>常常因为莫名的需求弄到大半夜不能回家，</p>
+			<p>不能按时完成任务被总监训话，</p>
+			<p>但是只要你热爱程序，心底还有着梦想，日子会渐渐好起来的！</p>
+			
+			
+			<p>在这个稍纵即逝的季节里，</p>
+			<p>努力盛开自己的绚烂吧！</p>
+			<p>即使是漆黑的夜晚，让自己闪闪发光！</p>
+			
+		</div>
 		</div>
 	</div>
 
@@ -131,6 +112,11 @@
 <script>
   $(document).ready(function(){
 		
+	  $("#bodyDiv").tabs({
+   		cache:true, //隐藏：启动
+   	});
+	  
+	  
 	  var p_url = $('#hphoto').attr("src");
 		
       $('#hphoto').mouseenter(function () {
@@ -147,8 +133,45 @@
 
           }
       });
+      
+   /* 如果当前背景色为白色，那么设置为蓝色，
+   		不然，背景色为白色
+   */
+   
+   $("#left_btn_one").click(function(){
+	   
+	   
+	    var tp2=$(this).val();
+	   if(tp2==1){ 
+		   $(this).css({"color":"white","background":"#00a2e3"}); 
+		   $("#tb_photo").attr("src", "slPhoto/tieba.png"); 	
+		   $(this).val("2")
+	   }else{
+		    $(this).css({"color":"#00a2e3","background":"white"}); 
+		    $("#tb_photo").attr("src", "slPhoto/tiebaTwo.png");	
+		    $(this).val("1");
+	   } 
+	 });
+   
+
+// 私信按钮图片	
 		
-	});
+      $("#left_btn_two").click(function(){
+     var sp2=$(this).val();
+	  if(sp2==1){ 
+    		  $(this).css({"color":"white","background":"#00a2e3"});
+        	  $('#sx_photo').attr('src', 'slPhoto/youjian.png');	  
+        	  $(this).val("2");
+    	   }else{
+    		   $(this).css({"color":"#00a2e3","background":"white"});
+         	   $('#sx_photo').attr('src', 'slPhoto/youjianTwo.png');	  
+         	   $(this).val("1");
+    	  }
+      });	  
+     
+     
+      	
+      });
 
 </script> 
 
