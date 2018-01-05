@@ -1,0 +1,99 @@
+
+<!-- #headDiv  由于background无法生效，采用内嵌样式 -->
+	
+	body{
+	background-color:#e7ecdd;
+	}
+	
+	#bodyDiv{
+		border:1px #f5f5f5 solid;
+		margin: 10px;
+		width:1300px;
+		height:700px;
+		border-radius: 3px;
+		position: relative;
+	}
+	
+	#rightBody{
+		border:2px #f5f5f5 solid;
+		margin: 20px 10px 10px 20px;
+		padding-left:10px;
+		width:1000px;
+		border-radius: 3px;
+		position: relative;
+		float:left;
+	}
+	
+	#leftTitle{
+		border:1px #e7ecdd solid;
+		margin: 20px;
+		width:200px;
+		height:230px;
+		border-radius: 3px;
+		position: relative;
+		float:left;
+	}
+	
+	#leftTitleTwo{
+		
+		padding:5px;
+		background:#f5f5f5;
+		color:black;
+	}
+	
+	
+	.leftTitleThree{
+		margin-top:5px;margin-left:10px;background:white;color:#00a2b3;
+		font-size: 16px;
+	}
+
+	
+	#tb_photo,#sx_photo{width: 16px;margin: 2px;}
+	
+	<!-- background: #00a2b3;color:white;  -->
+	
+	#head_photo
+		{
+			margin-left:20px;
+			margin-bottom:20px;
+			position: relative; 
+			width:185px;
+			height:135px;
+			border-radius:5px;
+			float:left;
+		}
+       #head_photoTwo
+	   {
+
+	   		position: relative;
+			overflow: hidden; 
+			width:165px;
+			height:125px;
+			border-radius:5px;
+			float:left;
+			margin: 8px;
+	   }
+	   
+	   img{
+		 width:auto;
+		 height:auto;
+		 max-width:100%;
+		 max-height:100%;
+		 float:left;
+		}
+
+		
+		#lanmu{
+		border:1px #e7ecdd solid;
+		width:100px;
+		margin-top:30px;
+		padding:10px;
+		border-radius: 3px;
+		position: relative;
+		}
+		
+		h3{color:#152c72;}
+		
+		p,li{color:#666666;}
+		
+		
